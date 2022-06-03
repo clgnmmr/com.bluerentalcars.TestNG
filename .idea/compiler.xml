@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="com.bluerentalcars.TestNG" />
+        <module name="bluerentalcars.TestNG" />
       </profile>
     </annotationProcessing>
   </component>

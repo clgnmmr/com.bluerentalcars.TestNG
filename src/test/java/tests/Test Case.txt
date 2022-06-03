@@ -34,4 +34,13 @@ NEGATİF TEST CASE
 5- giremediğini kontrol etmek için sağ ustte gelen yazının "invalid credentials" oldugunu kontrol edelim.
 
 
+   LOCATE LER
+1- Anasayfadaki login tusuna basmak
+2- Login sayfasindaki email kutusu
+3- Login sayfasindaki password kutusu
+4- Login sayfasindaki giris butonu
+   * sifre uyarisi gelirse -KAPAT- a basiniz
+5- Anasayfadaki kullanici profil ismi
+6- Login sayfasindaki giris yapilamadigini belirten yazi elementi
+
 
