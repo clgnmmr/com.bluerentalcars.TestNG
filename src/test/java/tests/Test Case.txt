@@ -15,7 +15,8 @@ NEGATİF TEST CASE
 2- anasayfadaki login butonuna bas
 3- login aşaasında email adress kısmına yanlış maili gir "client@bluerentalcars.com"
 4- login aşamasında password kısmına doğru şifreyi gir "12345"
-5- giremediğini kontrol etmek için sağ ustte gelen yazının "invalid credentials" oldugunu kontrol edelim.
+5- giris butonuna tiklayiniz
+6- giremediğini kontrol etmek için sağ ustte gelen yazının "invalid credentials" oldugunu kontrol edelim.
  
  TEST=DOGRU EMAİL ADRESİ YANLIŞ ŞİFRE İLE GİREMEME
 
@@ -23,7 +24,8 @@ NEGATİF TEST CASE
 2- anasayfadaki login butonuna bas
 3- login aşaasında email adress kısmına dogru maili gir "customer@bluerentalcars.com"
 4- login aşamasında password kısmına yanlış şifreyi gir "54321"
-5- giremediğini kontrol etmek için sağ ustte gelen yazının "invalid credentials" oldugunu kontrol edelim.
+5- giris butonuna tiklayiniz
+6- giremediğini kontrol etmek için sağ ustte gelen yazının "invalid credentials" oldugunu kontrol edelim.
 
    TEST=YANLIŞ EMAİL ADRSİ YANLIŞ İFRE İLE GİREMEME
 
@@ -31,7 +33,8 @@ NEGATİF TEST CASE
 2- anasayfadaki login butonuna bas
 3- login aşaasında email adress kısmına yanlış maili gir "client@bluerentalcars.com"
 4- login aşamasında password kısmına yanlış şifreyi gir "54321"
-5- giremediğini kontrol etmek için sağ ustte gelen yazının "invalid credentials" oldugunu kontrol edelim.
+5- giris butonuna tiklayiniz
+6- giremediğini kontrol etmek için sağ ustte gelen yazının "invalid credentials" oldugunu kontrol edelim.
 
 
    LOCATE LER

@@ -7,9 +7,9 @@ import utilities.Driver;
 
 public class BluerentalcarsPage {
 
-    public BluerentalcarsPage(){
+    public BluerentalcarsPage() {
 
-        PageFactory.initElements(Driver.getDriver(),this);
+        PageFactory.initElements(Driver.getDriver(), this);
 
     }
 
@@ -19,15 +19,17 @@ public class BluerentalcarsPage {
     @FindBy(xpath = "//input[@id='formBasicEmail']")
     public WebElement emailKutusu;
 
-   @FindBy(xpath = "//input[@id='formBasicPassword']")
-   public WebElement passwordKutusu;
+    @FindBy(xpath = "//input[@id='formBasicPassword']")
+    public WebElement passwordKutusu;
 
-   @FindBy(xpath = "//button[@type='submit']")
+    @FindBy(xpath = "//button[@type='submit']")
     public WebElement ikinciLogin;
 
-  @FindBy(id = "dropdown-basic-button")
+    @FindBy(id = "dropdown-basic-button")
     public WebElement profilIsmi;
 
+    @FindBy(xpath = "//div[text()='invalid credentials']")
+    public WebElement basarisizGirisMsj;
 
 
 }
