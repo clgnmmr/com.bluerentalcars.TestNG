@@ -31,6 +31,7 @@ public class BluerentalcarsPage {
     @FindBy(xpath = "//div[text()='invalid credentials']")
     public WebElement basarisizGirisMsj;
 
+
     @FindBy(xpath = "//select[@name='car']")
     public WebElement ddm;
 
@@ -55,6 +56,20 @@ public class BluerentalcarsPage {
     @FindBy(xpath = "(//button[@type='submit'])[2]")
     public WebElement completeReservationButon;
 
+    @FindBy(xpath = "//*[text()='Create new user']")
+    public WebElement createNewUserElement;
+
+    @FindBy(tagName = "h1")
+    public WebElement registerYazisiElement;
+
+    @FindBy(xpath = "//input[@name='firstName']")
+    public WebElement firstNameKutusuElement;
+
+    @FindBy(xpath = "//*[text()='You are registered successfully. ']")
+    public WebElement basariliGirisYazisiElement;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement registerButtonElement;
 
 
 

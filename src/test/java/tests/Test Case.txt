@@ -47,3 +47,15 @@ NEGATİF TEST CASE
 6- Login sayfasindaki giris yapilamadigini belirten yazi elementi
 
 
+ Kullanıcı oluşturma
+ 1-Anasayfaya git
+ 2-Anasayfadaki login tuşuna bas
+ 3-Create new user butonuna bas
+ 4-"Register" yazısının çıktığını test ediniz
+ 5-Gerekli bilgileri doldurduktan sonra Register butonuna basınız.
+ 6-"You are registered successfully" yazısını gördüğünüzü test ediniz
+ 7-Login sayfasındakı Login tuşuna basınız
+ 8-Doğru şekilde siteye giriş yaptığınızı test ediniz.
+ 9-Sayfayı kapatınız.
+
+
