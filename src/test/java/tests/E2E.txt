@@ -1,0 +1,15 @@
+
+test Case 01: arac kirallama
+1- kullanici "https://www.bluerentalcars.com/" sitasine gider
+2- anasayfadaki login butonuna bas
+3- login aşaasında email adress kısmına doğru maili gir "customer@bluerentalcars.com"
+4- login aşamasında password kısmına doğru şifreyi gir "12345"
+5 -email ve şifreden sonra giriş yapabilmek için alt kısımdaki  login butonu ile giriş yap
+6- giriş yaptıktan sonra şifre için gelen pop'un  "kapat" bas
+7- giriş yapıldıgını test etmek için  kullanınıcının isminin "Jordon Stark" oldugunu ontrol edelim
+8- kullanici herhangi bir arac secip gerekli bilgileri doldursun
+9- kullanici continue rezervation butonuna tiklasin
+10- Complete Reservation basliginin gorundugunu test eder
+11- Complete Reservation istenilen bilgiler doldurulur
+12- Reservasyon tamamlanir
+13. Rezervasyonun tamamlandigini test eder
