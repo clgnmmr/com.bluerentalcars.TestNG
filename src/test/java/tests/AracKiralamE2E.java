@@ -45,35 +45,40 @@ public class AracKiralamE2E extends TestBaseRapor {
         String expectedUsername = "Jordon Stark";
         String actualUsername = bluerentalcarsPage.profilIsmi.getText();
         Assert.assertEquals(actualUsername, expectedUsername);
-        extentTest.pass("kullanici basarili sekilde giris yapti");
+        extentTest.pass("Kullanici adi anasayfda goruldu");
         //8- kullanici herhangi bir arac secip devamindaki gerekli bilgileri doldursun
         Select select=new Select(bluerentalcarsPage.ddm);
-        select.selectByVisibleText("Audi Q8");
+        select.selectByVisibleText("Ford Kuga");
         Actions actions=new Actions(Driver.getDriver());
         actions.click(bluerentalcarsPage.pickUp)
                 .sendKeys("Kansas Arkansas City"+ Keys.TAB)
                 .sendKeys("Kansas Arkansas City"+ Keys.TAB)
-                .sendKeys("15082022"+ Keys.TAB)
+                .sendKeys("17092022"+ Keys.TAB)
                 .sendKeys("1200"+ Keys.TAB)
-                .sendKeys("25082022"+ Keys.TAB)
+                .sendKeys("28092022"+ Keys.TAB)
                 .sendKeys("1200").perform();
+        extentTest.info("Gerekli araç kiralama bilgileri girildi");
         //9- kullanici continue rezervation butonuna tiklasin
         bluerentalcarsPage.contiuneButonu.click();
+        extentTest.info("devam butaonuna tiklandi");
         //10- Complete Reservation basliginin gorundugunu test eder
         Assert.assertTrue(bluerentalcarsPage.completeReservationYazsi.isDisplayed());
+        extentTest.pass("Baslik Complete Reservation yazisi görüldü ");
         //11- Complete Reservation istenilen bilgiler doldurulur
         actions.click(bluerentalcarsPage.cardNo)
                 .sendKeys("1234123412341234"+Keys.TAB)
                 .sendKeys("Jordon Stark"+Keys.TAB)
                 .sendKeys("1224"+Keys.TAB)
                 .sendKeys("122").perform();
+        extentTest.info("gerekli fatura bilgiler dolduruldu");
         bluerentalcarsPage.rodioButon.click();
+        extentTest.info("kullanici doldurdugu bilgilerin dogrulugunu onayladi");
         bluerentalcarsPage.completeReservationButon.click();
+        extentTest.info("Kullanici rezervasyonu basarili bir sekilde tamamladi");
         //12- Reservasyon tamamlanir
         //13. Rezervasyonun tamamlandigini "Reservation created successfully" ggrundugunu test eder
         ReusableMethods.waitForVisibility(bluerentalcarsPage.aracKiralamaBasariliGirisMsj,10);
         Assert.assertTrue(bluerentalcarsPage.aracKiralamaBasariliGirisMsj.isDisplayed());
-
+        extentTest.pass("kullanici basarili bir sekilde arac kiraladı");
     }
-
 }
